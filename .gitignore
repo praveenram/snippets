@@ -1,0 +1,10 @@
+bin
+obj
+out
+log
+tmp
+*.log
+*.dll
+*.o
+*.vs
+.vs
