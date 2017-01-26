@@ -6,6 +6,13 @@ sudo apt-get upgrade
 sudo apt-get install vim git wget curl build-essential htop python-pip python3-pip tilda terminator flashplugin-installer autoconf automake cmake unzip libv4l-dev
 sudo apt-get install libeigen3-dev cmake-qt-gui
 
+# Java
+sudo apt-get install openjdk-9-jdk
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+# Install any other version of official oracle jdk you need
+
 # NVidia drivers and cuda
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
