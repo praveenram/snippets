@@ -26,6 +26,41 @@ sudo apt-get install libatlas-base-dev gfortran
 # Use cmake-gui to configure required items in cmake
 # To finish installing OpenCV follow steps from the OpenCV website: docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html or http://www.pyimagesearch.com/2016/10/24/ubuntu-16-04-how-to-install-opencv/
 
+cd
+mkdir dev-tools
+cd dev-tools
+
+git clone https://github.com/Itseez/opencv.git
+git clone https://github.com/Itseez/opencv_contrib.git
+
+cd opencv
+git checkout 3.2.0
+
+cd ../opencv_contrib
+git checkout 3.2.0
+
+cd ../opencv
+mkdir build
+cd build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+    -D CMAKE_INSTALL_PREFIX=/usr/local \
+    -D WITH_CUDA=ON \
+    -D ENABLE_FAST_MATH=1 \
+    -D CUDA_FAST_MATH=1 \
+    -D WITH_CUBLAS=1 \
+    -D WITH_EIGEN=1 \
+    -D WITH_OPENGL=1 \
+    -D WITH_NVCUVID=1 \
+    -D WITH_LIBV4L=1 \
+    -D INSTALL_PYTHON_EXAMPLES=OFF \
+    -D OPENCV_EXTRA_MODULES_PATH=~/dev-tools/opencv_contrib/modules \
+    -D BUILD_EXAMPLES=OFF ..
+
+make -j8
+sudo make install
+sudo ldconfig
+
 # Might need to make openCV again when OS is upgraded.
 
 # Bash modifications
