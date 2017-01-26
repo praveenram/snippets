@@ -73,3 +73,6 @@ sudo apt-get install gnuplot libserial-dev v4l-utils libboost-thread-dev libboos
 
 # General
 sudo usermod -a -G staff dialout praveen
+
+# VIm / Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
