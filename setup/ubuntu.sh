@@ -82,5 +82,5 @@ sudo apt-get install topmenu-gtk3 topmenu-gtk2 python3-tk
 sudo apt-get install xournal
 sudo apt-get install bluez-tools bluetooth
 sudo apt-get install redshift #similar to flux for managing display color
-sudp apt-get install plasma-applet-redshift-control plasma-widget-redshift
-
+sudo apt-get install plasma-applet-redshift-control plasma-widget-redshift
+sudo apt-get install libgladeui-dev
