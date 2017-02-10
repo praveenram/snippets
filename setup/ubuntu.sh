@@ -81,3 +81,5 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt-get install topmenu-gtk3 topmenu-gtk2 python3-tk
 sudo apt-get install xournal
 sudo apt-get install bluez-tools bluetooth
+sudo apt-get install redshift #similar to flux for managing display color
+
