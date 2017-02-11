@@ -83,4 +83,9 @@ sudo apt-get install xournal
 sudo apt-get install bluez-tools bluetooth
 sudo apt-get install redshift #similar to flux for managing display color
 sudo apt-get install plasma-applet-redshift-control plasma-widget-redshift
+
+#Glade
 sudo apt-get install libgladeui-dev
+sudo apt-get install intltool gtk-doc-tools gtk+-3.0 glade
+
+#EOF
