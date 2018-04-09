@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ControlTemplate x:Key="TextboxValidationError">
+        <StackPanel>
+            <AdornedElementPlaceholder x:Name="textBox"/>
+            <TextBlock Margin="3" Text="{Binding [0].ErrorContent}" Foreground="PaleVioletRed"/>
+        </StackPanel>
+    </ControlTemplate>
+</ResourceDictionary>

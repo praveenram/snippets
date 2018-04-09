@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Snippets
+namespace Snippets.Extensions
 {
     public static class DictionaryExtensions
     {
